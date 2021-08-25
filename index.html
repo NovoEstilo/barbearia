@@ -4,61 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>cartão premium</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <title>Barbearia Novo Estilo</title>
+    <link rel="stylesheet" href="css/style.css" title="" type="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <button class="btn_fecha" type="submit" onclick="fechamenu()">X</button>
-
-    <div class="servs" onclick="ativamenu()">
-      <img class="iconebarbearia" src="img/iconebarbearia.png" alt="" />
-      <p class="p_temp">Serviços e horários</p>
-      <p class="p_serv" onclick="moveserv()"><span class="span2">Serviço</span></br>
-      Corte degradê</br>
-      Corte degradê, barba</br>
-      Corte social, barba</br>
-      Corte degradê infantil
-      </p>
-      
-      <p class="p_hora" onclick="movehora()"><span class="span2">Horários</span></br>De domingo à domingo, de 7:30hs às 19:00hs.</p>
-      
-    </div>
-    <img class="img_banner" src="img/img_banner.jpg" alt="img" />
-    <div class="logo">
-      <img class="img_logo" src="img/img_logo.jpg" alt="img" />
-    </div>
-    <h1 class="titulo">Novo Estilo Barbearia</h1>
-    <p class="slogan">Josimar Silva</p>
-  </header>
+  <button type="submit" class="btn_list" onclick="abrelist()">Serviços</button>
+  <ul class="list">
+    <li class="li_list" style="color:red">
+      CORTES:
+      </span><button class="button" type="submit" onclick="fechalist()">X</button>
+    </li>
+    <li class="li_list">Corte social<span class="preco">R$ 14,00</span></li>
+    <li class="li_list">Corte degradê<span class="preco">R$ 15,00</span></li>
+    <li class="li_list">Degradê navalhado<span class="preco">R$ 18,00</span></li>
+    <li class="li_list">Barba<span class="preco">R$ 12,00</span></li>
+    <li class="li_list">Sobrancelha<span class="preco">R$ 06,00 </span></li>
+    <li class="li_list" style="color:red" color="red">COMBOS PROMOCIONAIS:</li>
+    <li class="li_list">Corte social+Barba<span class="preco">R$ 23,00</span></li>
+    <li class="li_list">Corte degradê+Barba<span class="preco">R$ 25,00</span></li>
+    <li class="li_list">Degradê navalhado+Barba<span class="preco">R$ 28,00</span></li>
+    <li class="li_list">Corte social+Barba+Sobrancelha<span class="preco">R$ 28,00</span></li>
+    <li class="li_list">Corte degradê+Barba+Sobrancelha<span class="preco">R$ 30,00</span></li>
+    <li class="li_list">Corte navalhado+Barba+Sobrancelha<span class="preco">R$ 33,00</span></li>
+  </ul>
   <section class="corpo">
+    
+  <section class="banner">
+    <img class="img_banner" src="img/img_banner.jpg" alt="" />
+  </section>
+  
+  <header class="cabecalho">
+    <div class="logo">
+      <img class="img_logo" src="img/img_logo.jpg" alt="" />
+    </div>
+    <h1 class="titulo">Novo Estilo</h1>
+    <h2 class="titulo2">Josimar Silva</h2>
+  </header>
+  
+  <section class="cantainer">
     <section class="box">
-     <div class="contato">
-      <a class="link_contato" href="tel:+55-088-98103-8171">Nosso contato:</br>(88) 981038171</a>
-     </div>
-      <div class="card">
-        <a class="link_redes" href="https://www.instagram.com/barbearia_novo_estylo/"><img class="img_card" src="img/insta.jpg" alt="" /></a>
+       <a class="link_contato" href="tel:+55-088-98103-8171">Nosso contato:</br>(85) 992385563📞</a>
+      <div class="contato">
+       
       </div>
-      <!--<div class="card">
-        <img class="img_card" src="img/face.jpg" alt="" />
-      </div>-->
-      <div class="card">
-        <a class="link_redes" href="https://wa.me/55088981038171?text=Oi,%20tudo%20bem?"><img class="img_card" src="img/whats.jpg" alt="" /></a>
-      </div>
-      <div class="card">
-        <a class="link_redes" href="mailto:josimarcabeleireiro2018@gmail.com?subject="link HTML"><img class="img_card" src="img/email.jpg" alt="" /></a>
+      <div class="redes">
+        <a class="link-redes" href="https://www.instagram.com/barbearia_novo_estylo/"><img class="img_link" src="img/insta.jpg" alt="" />
+        <p class="p_link">Novo Estilo</p></a>
+        
+        <a class="link-redes" href="https://www.instagram.com/curso_barbeiro_iniciantes/"><img class="img_link" src="img/insta.jpg" alt="" />
+        <p class="p_link">Curso barbeiro</p></a>
+        
+        <a class="link-redes" href="https://www.instagram.com/estylo_fashion_oficial/"><img class="img_link" src="img/insta.jpg" alt="" />
+        <p class="p_link">Estylo fashion</p></a>
+        
+        
+        <a class="link-redes" id="link_redes2" href="mailto:josimarcabeleireiro2018@gmail.com?subject=Questions" title="">
+        
+        <img class="img_link" src="img/email.jpg" alt="" />
+        
+        <p class="p_link">Email</p></a>
+        
+        <a class="link-redes" id="link_redes2" href="https://wa.me/+55088981038171?text=Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda"><img class="img_link" src="img/whats.jpg" alt="" />
+        <p class="p_link">Whatsapp</p></a>
+        
+        <!--<a class="link-redes" href="#">
+          <img class="img_link" src="img/email.jpg" alt="" />
+          <p class="p_link">Whatsapp</p></a>-->
+          
       </div>
       <div class="local">
-        <a class="link_local"
-        href="https://maps.app.goo.gl/2NLM9Hx4t9JzBsXg6">Nossa localização: </br><span>R. Raimundo Alves, 1682 - Flores, Russas - CE, 62900-000.</span> </a>
+        <a class="link_local" href="https://maps.app.goo.gl/2NLM9Hx4t9JzBsXg6">Como chegar 📌</a>
       </div>
     </section>
   </section>
+  
   <footer class="rodape">
-    <a class="copy_link" href="#">Produzido por AwbE links.</a>
+    
   </footer>
-  <script src="js/script.js">
+</section>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/script.js">
     
   </script>
 </body>
